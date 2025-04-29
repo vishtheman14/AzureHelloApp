@@ -31,6 +31,7 @@ steps:
     publishWebProjects: false
     projects: 'AzureHelloApp/AzureHelloApp.csproj'
     arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory) --runtime win-x86 --self-contained false'
+    zipAfterPublish: true
 
 - task: PublishBuildArtifacts@1
   inputs:
