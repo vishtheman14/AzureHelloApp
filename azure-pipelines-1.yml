@@ -17,18 +17,18 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'restore'
-    projects: 'AzureHelloApp.csproj'
+    projects: 'AzureHelloApp/AzureHelloApp.csproj'
 
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
-    projects: 'AzureHelloApp.csproj'
+    projects: 'AzureHelloApp/AzureHelloApp.csproj'
     arguments: '--configuration $(buildConfiguration)'
 
 - task: DotNetCoreCLI@2
   inputs:
     command: 'publish'
-    projects: 'AzureHelloApp.csproj'
+    projects: 'AzureHelloApp/AzureHelloApp.csproj'
     arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
 
 - task: PublishBuildArtifacts@1
