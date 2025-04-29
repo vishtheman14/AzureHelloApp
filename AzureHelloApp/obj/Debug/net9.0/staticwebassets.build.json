@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "5lBPtyj8eS4ZJLI87iAN2e8cUIwuKU1UkfSMpUAdQbs=",
+  "Source": "AzureHelloApp",
+  "BasePath": "_content/AzureHelloApp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
