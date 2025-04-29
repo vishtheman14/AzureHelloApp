@@ -29,7 +29,7 @@ steps:
   inputs:
     command: 'publish'
     projects: 'AzureHelloApp/AzureHelloApp.csproj'
-    arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
+    arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory) --runtime win-x86 --self-contained false'
 
 - task: PublishBuildArtifacts@1
   inputs:
